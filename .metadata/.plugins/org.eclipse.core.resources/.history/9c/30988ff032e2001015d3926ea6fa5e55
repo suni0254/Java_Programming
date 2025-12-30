@@ -1,0 +1,30 @@
+package SeleniumPractice;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+
+class Practice_3 {
+	public static void main(String[] args) {
+		String priceOriginal[] = {"$230","$30","$2","$780"};
+		List<String> actualPrice = new ArrayList<String>();
+		for(String price:priceOriginal)
+		{
+			price = price.replaceAll("[^(0-9).]","");
+			actualPrice.add(price);
+		}
+		System.out.println(actualPrice);
+		List<String> strToInt = new ArrayList<String>();
+		for(String str:actualPrice)
+		{
+			Integer.parseInt(str);
+			strToInt.add(str);
+		}
+		System.out.println(strToInt);
+		
+	}
+}

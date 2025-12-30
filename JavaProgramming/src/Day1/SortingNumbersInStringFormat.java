@@ -1,0 +1,33 @@
+package Day1;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class SortingNumbersInStringFormat {
+
+	public static void main(String[] args) {
+		String[] priceStrings = {"$100", "$20", "$5", "$50"};
+		System.out.println("Original Prices are "+Arrays.toString(priceStrings));
+		List<String> actPricesList = new ArrayList<String>();
+		//Print Actual Prices in String Format
+		for(String price:priceStrings)
+		{
+			price = price.replaceAll("[^0-9.]", ""); // removes ₹ , $
+			actPricesList.add(price);
+		}
+		System.out.println("After removing symbols "+actPricesList);
+		List<Integer> priceIntegers = new ArrayList<Integer>();
+		for(String price:actPricesList)
+		{
+			priceIntegers.add(Integer.parseInt(price));
+		}
+		System.out.println("After converting to Number Format "+priceIntegers);
+		Collections.sort(priceIntegers);
+		System.out.println("After Sorting(Ascending) "+priceIntegers);
+		Collections.sort(priceIntegers,Collections.reverseOrder());
+		System.out.println("After Sorting(Descending) "+priceIntegers);
+	}
+
+}
