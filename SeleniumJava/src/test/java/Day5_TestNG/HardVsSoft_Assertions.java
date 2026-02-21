@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class HardVsSoft_Assertions {
 	
-	
+	/*
 	@Test
 	void test_hardAssertions()
 	{
@@ -18,8 +18,9 @@ public class HardVsSoft_Assertions {
 		System.out.println("ghi");
 		System.out.println("xyz");
 	}
+	*/
 	
-	/*
+	
 	@Test
 	void test_softAssertions()
 	{
@@ -33,5 +34,5 @@ public class HardVsSoft_Assertions {
 		System.out.println("xyz");
 		sa.assertAll(); 		//Mandatory  If we dont use 'assertAll()' then the test method will be 'PASS'
 	}
-	*/
+	
 }

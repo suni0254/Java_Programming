@@ -1,0 +1,7 @@
+2026-01-09 12:40:30.607 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [D:\Projects\JAVA\JAVA Learning\TutorialNinja_Application\master.xml] otherwise TestNG may fail or not work as expected.
+2026-01-09 12:40:30.894 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Projects\JAVA\JAVA Learning\TutorialNinja_Application\master.xml
+
+2026-01-09 12:40:58.484 [main] INFO  testCases.TC002_LoginTest_ValidCredentials - ***************** Starting Login Test Case ************************
+2026-01-09 12:41:01.668 [main] INFO  testCases.TC002_LoginTest_ValidCredentials - ***************** Validating MyAccount Page ***********************
+2026-01-09 12:41:01.734 [main] INFO  testCases.TC002_LoginTest_ValidCredentials - ***************** Finished Login Test Case ************************

@@ -38,6 +38,10 @@ public class HashMapDemo {
 		System.out.println(hm.values());		//[John, Scott, Mary, Scott]
 		System.out.println(hm.entrySet()); 		//[101=John, 102=Scott, 103=Mary, 104=Scott] in the form os Set[]
 		
+		//Insert the key which is already deleted
+		hm.put(105,"Ravi");
+		System.out.println("Printing all the elements after inserting the key which is already deleted"+hm.entrySet());
+		
 		//Reading Data from HashMap using For each loop
 		for(Object x:hm.keySet())
 		{
@@ -56,11 +60,6 @@ public class HashMapDemo {
 		hm.clear();
 		System.out.println("after removing all the data form hashmap");
 		System.out.println("Is hashmap empty?:"+hm.isEmpty());
-		
-		
-		
-		
-		
 	}
 
 }

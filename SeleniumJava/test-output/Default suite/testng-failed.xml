@@ -5,7 +5,7 @@
     <classes>
       <class name="Day5_TestNG.HardVsSoft_Assertions">
         <methods>
-          <include name="test_hardAssertions"/>
+          <include name="test_softAssertions"/>
         </methods>
       </class> <!-- Day5_TestNG.HardVsSoft_Assertions -->
     </classes>

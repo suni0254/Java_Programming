@@ -42,11 +42,6 @@ public class TypeCastingObjects1 {
 		System.out.println(c1.id);   //Child
 		c1.m2();          //Child
 		*/
-		
-		
-		
-		
-
 	}
 
 }

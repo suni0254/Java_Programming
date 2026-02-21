@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Imranullah/IdeaProjects/SeleniumFundamentals/SeleniumPractice/src/test/java/annotationsAndAssertions/AnnotationsAndAssertions.java">
+        <classes>
+            <class name="annotationsAndAssertions.Annotations1">
+                <methods>
+                    <include name="firstTest"/>
+                </methods>
+            </class>
+            <class name="annotationsAndAssertions.Annotations2">
+                <methods>
+                    <include name="secondTest"/>
+                </methods>
+            </class>
+            <class name="annotationsAndAssertions.Annotations3">
+                <methods>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

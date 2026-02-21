@@ -24,7 +24,7 @@ public class OpenLinkInNewTabUsingActionsClass {
 		//This click method is not from webelement this is from Actions class
 		//Normal click() will not accept parameters but from Actions class click() will accept webelement as parameter
 		
-		//Opening Registraion link in New tab using Actions class (CTRL + click
+		//Opening Registraion link in New tab using Actions class (CTRL + click)
 		act.keyDown(Keys.CONTROL).click(regisLink).keyUp(Keys.CONTROL).perform();
 		
 		//Switching to Registration Page

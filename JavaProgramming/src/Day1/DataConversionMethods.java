@@ -4,7 +4,7 @@ public class DataConversionMethods {
 
 	public static void main(String[] args) {
 		/*
-		//String----->int 
+		//String(Non Primitive)----->int(Primitive) 
 		//String s = "Welcome";	//Cannot convert
 		
 		String price1 = "120";
@@ -27,7 +27,7 @@ public class DataConversionMethods {
 		*/
 		
 		
-		//int,double,bool,char---->String
+		//int,double,bool,char(Primitive)---->String(Non-Primitive)
 		int a =10;
 		double d = 34.64;
 		char c = 'A';

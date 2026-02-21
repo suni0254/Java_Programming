@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+
+<listeners>
+<listener class-name = "utilities.ExtentReportManager"/>
+</listeners>
+
+  <test thread-count="5" name="Test">
+  <parameter name = "os" value ="WINDOWS"/>
+  <parameter name = "browser" value ="CHROME"/>
+    <classes>
+      <!-- <class name="testCases.TC001_AccountRegistTest"/> -->
+      <class name="testCases.TC002_LoginTest_ValidCredentials"/>
+     <!--  <class name="testCases.TC003_LoginDDT"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

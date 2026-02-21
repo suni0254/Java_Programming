@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suites" verbose="2" allow-return-values="true" parallel="tests">
+    <test name="TestNg practice suite" verbose="2" allow-return-values="true">
+        <groups>
+            <run>
+                <include name="Java"/>
+                <exclude name="Python"/>
+                <exclude name="Selenium"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNGGroups.Group1"/>
+            <class name="TestNGGroups.Group2"/>
+            <class name="TestNGGroups.Group3"/>
+        </classes>
+    </test>
+</suite>

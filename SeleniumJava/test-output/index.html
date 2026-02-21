@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Sunil\AppData\Local\Temp\testng-eclipse-1490275979\testng-customsuite.xml</span>
+                    <span>C:\Users\Sunil\AppData\Local\Temp\testng-eclipse-409671096\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Day5_TestNG.HardVsSoft_Assertions" class="method navigator-link" hash-for-method="test_hardAssertions">test_hardAssertions</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Day5_TestNG.HardVsSoft_Assertions" class="method navigator-link" hash-for-method="test_softAssertions">test_softAssertions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,20 +126,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_hardAssertions">
-                  </a> <!-- test_hardAssertions -->
-                  <span class="method-name">test_hardAssertions</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [1237] but found [123]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at Day5_TestNG.HardVsSoft_Assertions.test_hardAssertions(HardVsSoft_Assertions.java:16)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+                  <a name="test_softAssertions">
+                  </a> <!-- test_softAssertions -->
+                  <span class="method-name">test_softAssertions</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [1237] but found [123]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Day5_TestNG.HardVsSoft_Assertions.test_softAssertions(HardVsSoft_Assertions.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -148,7 +144,7 @@
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -173,7 +169,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sunil\AppData\Local\Temp\testng-eclipse-1490275979\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sunil\AppData\Local\Temp\testng-eclipse-409671096\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -224,14 +220,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_hardAssertions')
+data.setCell(0, 1, 'test_softAssertions')
 data.setCell(0, 2, 'Day5_TestNG.HardVsSoft_Assertions')
-data.setCell(0, 3, 12);
+data.setCell(0, 3, 33);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 33 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -261,7 +257,7 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test_hardAssertions</span>
+                <span class="method-name">test_softAssertions</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

@@ -14,8 +14,7 @@ public class SortingNumbersInStringFormat {
 		//Print Actual Prices in String Format
 		for(String price:priceStrings)
 		{
-			price = price.replaceAll("[^0-9.]", ""); // removes ₹ , $
-			actPricesList.add(price);
+			actPricesList.add(price.replaceAll("[^0-9.]", ""));	// removes ₹ , $
 		}
 		System.out.println("After removing symbols "+actPricesList);
 		List<Integer> priceIntegers = new ArrayList<Integer>();
